@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import Landing from './Landing'
-import About from './About'
+import Landing from './Landing/Landing'
+import About from './About/About'
 import './Home.css'
 
 export default class Home extends Component {

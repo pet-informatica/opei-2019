@@ -1,0 +1,25 @@
+.Footer {
+    background-color: #212121;
+    width: 100%;
+    height: 400px;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.Footer-content{
+    width: 50%;
+    margin-left: 70px;
+    border: thin solid black;
+
+    display: flex;
+    justify-content: space-evenly;
+
+    
+}
+
+.Footer-contact{
+    width: 30%;
+
+    border: thin solid black;
+}

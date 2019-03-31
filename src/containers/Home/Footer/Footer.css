@@ -5,30 +5,68 @@
 
     display: flex;
     justify-content: space-between;
+    flex-direction: column;
+
+    border: thin solid white;
+}
+
+.Footer-top{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+
+    height: 80%;
+}
+
+.Footer-bottom{
+    height: 20%;
+    border: thin solid blue;
+
+    display: flex;
+    flex-direction: row;
+
+}
+
+.Footer-pet-logo{
+    width: 33%;
+    border: thin solid blue;
+}
+
+.Footer-pet-rights{
+    width: 33%;
+    border: thin solid blue;
+}
+
+.Footer-pet-social{
+    width: 33%;
+    border: thin solid blue;
 }
 
 .Footer-content{
     width: 50%;
-    margin-left: 70px;
-    border: thin solid black;
+    height: 80%;
+    padding-left: 150px;
+
 
     display: flex;
     justify-content: space-evenly;
-
-    
+    border: thin solid purple;
 }
 
 .Footer-contact{
-    width: 30%;
+    width: 50%;
+    height: 80%;
 
-    border: thin solid pink;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 200px;
+    border: thin solid purple;
 }
 
 .Footer-contact-box{
-    width: 40%;
+    width: 50%;
+    height: 100%;
 
     display: flex;
     flex-direction: column;
-
-    border: thin white solid;
 }

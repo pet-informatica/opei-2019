@@ -12,7 +12,7 @@ export default class Footer extends Component {
       {"name": "Contato", "route": "/Contact"}
     ]
 
-    const links_provas_anteriores = [
+    const links_provas_antigas = [
       {"name": "2015", "route": "/"},
       {"name": "2016", "route": "/"},
       {"name": "2017", "route": "/"},
@@ -27,16 +27,21 @@ export default class Footer extends Component {
 
     return (
       <div className="Footer">
-      <div className="Footer-content">
-        <Columns title="OPEI" data={links_opei} />
-        <Columns title="Provas Anteriores" data={links_provas_anteriores}/>
-        <Columns title="Informações" data={links_informacoes}/>
-      </div>
-      <div className="Footer-contact">
-        <div className="Footer-contact-box">
-          <Columns title="Fale Conosco" data={links_opei} />
-        </div>
-      </div>
+        <div className="Footer-top">
+            <div className="Footer-content">
+              <Columns title="OPEI" data={links_opei} />
+              <Columns title="Provas Antigas" data={links_provas_antigas}/>
+              <Columns title="Informações" data={links_informacoes}/>
+            </div>
+            <div className="Footer-contact">
+                <Columns title="Fale Conosco" data={links_opei} />
+            </div>
+          </div>
+          <div className="Footer-bottom">
+              <div className="Footer-pet-logo"></div>
+              <div className="Footer-pet-rights"></div>
+              <div className="Footer-pet-social"></div>
+          </div>
       </div>
     )
   }

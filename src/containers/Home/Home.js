@@ -18,8 +18,8 @@ export default class Home extends Component {
   render() {
     return (
       <div className="Home">
-        <Landing isMobile={this.state.mobile} />
-        <About />
+        <Landing />
+        <About isMobile={this.state.mobile}/>
       </div>
     )
   }

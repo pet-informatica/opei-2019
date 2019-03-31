@@ -4,10 +4,21 @@ import About from './About/About'
 import './Home.css'
 
 export default class Home extends Component {
+
+  state = {
+    mobile: window.innerWidth < 500
+  }
+
+  componentDidMount() {
+    window.addEventListener('resize', () => {
+      this.setState({ mobile: window.innerWidth < 500 });
+    });
+  }
+
   render() {
     return (
       <div className="Home">
-        <Landing />
+        <Landing isMobile={this.state.mobile} />
         <About />
       </div>
     )

@@ -7,7 +7,6 @@ export default class About extends Component {
    
     return (
       <div className="About">
-        <div className="About">
           <div className = "About-image"></div>
           <div className="About-content">
             <Title name="Sobre" />
@@ -16,9 +15,7 @@ export default class About extends Component {
                
                 <a href="/About">perguntas frequentes, modalidades e mais</a>
             </div>
-       
           </div>
-        </div>
       </div>
     )
   }

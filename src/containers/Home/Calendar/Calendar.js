@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Title from '../../../components/Title/Title';
-import { Card } from 'semantic-ui-react'
+import { Card, Grid } from 'semantic-ui-react'
 import './Calendar.css'
 
 export default class Calendar extends Component {
@@ -8,20 +8,30 @@ export default class Calendar extends Component {
    
     return (
       <div className="Calendar">
-          <div className = "About-image"></div>
-          <div className="About-content">
-            <Title name="Calendar" />
-            <div className="Calendar-dates">
-            <Card.Group>
-                <Card fluid color='blue' header='Inscrições' meta='09/04/19 a 15/08/19' />
-                <Card fluid color='green' header='Prova' meta='05/10/19' description='Modalidade A: 9:00 às 12:00
-                \nModalidade B: 9:00 às 12:00
-                \nModalidade C: 8:00 às 12:00' />
-                <Card fluid color='yellow' header='Contestamento de Questões' meta='06/10/19 a 15/10/19' />
-                <Card fluid color='red' header='Premiação' meta='30/11/19' />
-            </Card.Group>
-            </div>
-          </div>
+            <Title name="Calendário"/>
+            <Grid columns={4} id="Calendar-cards">
+                <Grid.Row stretched>
+                        <Grid.Column>
+                            <Card fluid color='blue' header='Inscrições' meta='{data inicio} a {data fim}' />
+                        </Grid.Column>
+                        <Grid.Column>
+                            <Card fluid color='green'>
+                                    <Card.Content>
+                                        <Card.Header>Prova</Card.Header>
+                                        <Card.Meta>data</Card.Meta>
+                                        <Card.Description>Prova teórica: 9:00 às 12:00</Card.Description>
+                                        <Card.Description>Prova prática: 8:00 às 12:00</Card.Description>
+                                    </Card.Content>
+                            </Card>
+                        </Grid.Column>
+                        <Grid.Column>
+                            <Card fluid color='yellow' header='Contestamento de Questões' meta='{data inicio} a {data fim}' />
+                        </Grid.Column>
+                        <Grid.Column>
+                            <Card fluid color='red' header='Cerimônia de Premiação' meta='{data}' />
+                        </Grid.Column>
+                </Grid.Row>
+            </Grid>
       </div>
     )
   }

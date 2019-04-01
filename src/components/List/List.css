@@ -6,3 +6,17 @@
 
     border: thin solid orange;
 }
+
+ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+li {
+    margin-bottom: 20px; 
+}
+
+ul a {
+    color: white;
+    text-decoration: none;
+}

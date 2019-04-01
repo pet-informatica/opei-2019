@@ -1,12 +1,14 @@
 .List{
     height: 50%;
+    padding-left: 10px;
 
     display: flex;
     flex-direction: column;
 
-    border: thin solid orange;
 }
-
+.LinksList-item{
+    color: white;
+}
 ul {
     list-style-type: none;
     padding-left: 0;

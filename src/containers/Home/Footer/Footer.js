@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
+import {Grid} from 'semantic-ui-react';
 import Columns from '../../../components/Columns/Columns'
+
 
 import './Footer.css'
 
@@ -27,21 +29,65 @@ export default class Footer extends Component {
 
     return (
       <div className="Footer">
-        <div className="Footer-top">
-            <div className="Footer-content">
-              <Columns title="OPEI" data={links_opei} />
-              <Columns title="Provas Antigas" data={links_provas_antigas}/>
-              <Columns title="Informações" data={links_informacoes}/>
-            </div>
-            <div className="Footer-contact">
+       <Grid className="Grid-1" stackable>
+        <Grid.Row className="Grid-row1" columns={2}>
+          <Grid.Column>
+            <Grid stackable>
+            
+              <Grid.Row columns={3}>
+                <Grid.Column>
+                  <div className="Footer-OPEI">
+                    <Columns title="OPEI" data={links_opei} />
+                  </div>
+                </Grid.Column>
+                <Grid.Column>
+                  <div className="Footer-provas">
+                    <Columns title="Provas Antigas" data={links_provas_antigas}/>
+                  </div>
+                </Grid.Column>
+                <Grid.Column>
+                  <div className="Footer-info">
+                    <Columns title="Informações" data={links_informacoes}/>
+                  </div>
+                </Grid.Column>
+              </Grid.Row>
+              
+            </Grid>
+             
+          </Grid.Column>
+          <Grid.Column>
+            <div className="Fotter-top-right">
+              <div className="Footer-contato">
                 <Columns title="Fale Conosco" data={links_opei} />
+              </div>
             </div>
-          </div>
-          <div className="Footer-bottom">
-              <div className="Footer-pet-logo"></div>
-              <div className="Footer-pet-rights"></div>
-              <div className="Footer-pet-social"></div>
-          </div>
+          </Grid.Column>
+        </Grid.Row>
+       </Grid>
+        
+
+        <Grid  stackable>
+          <Grid.Row  columns={3}>
+            <Grid.Column> 
+              <div className="Footer-pet-logo">
+                  coisas
+              </div> 
+            </Grid.Column>
+
+            <Grid.Column>
+                <div className="Footer-pet-rights">
+                coisas
+                </div> 
+            </Grid.Column>
+
+            <Grid.Column> 
+              <div className="Footer-pet-social">
+                coisas
+              </div> 
+            </Grid.Column>
+          </Grid.Row>
+        </Grid>
+    
       </div>
     )
   }

@@ -1,72 +1,43 @@
-.Footer {
+.Footer{
     background-color: #212121;
-    width: 100%;
-    height: 400px;
-
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
-
-    border: thin solid white;
 }
 
-.Footer-top{
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row;
 
-    height: 80%;
+
+.Grid-column3{
+    display: flex;
+    border: thin solid black;
 }
 
-.Footer-bottom{
-    height: 20%;
-    border: thin solid blue;
+.Grid-row1{
+    height: 100%; 
+}
 
+.Grid-row2{
+    height: 30%;
     display: flex;
-    flex-direction: row;
-
+    flex-wrap: wrap;
 }
 
 .Footer-pet-logo{
-    width: 33%;
-    border: thin solid blue;
+    width: 30%;
+    height: 100%;
 }
 
 .Footer-pet-rights{
-    width: 33%;
-    border: thin solid blue;
-}
-
+    width: 30%;
+    height: 100%;}
 .Footer-pet-social{
-    width: 33%;
-    border: thin solid blue;
+    width: 30%;
+    height: 100%;}
+
+.Footer-contato{
+    display: flex;
+    justify-content: center;
+    width: 40%;
 }
 
-.Footer-content{
-    width: 50%;
-    height: 80%;
-    padding-left: 150px;
-
-
+.Footer-info{
     display: flex;
-    justify-content: space-evenly;
-    border: thin solid purple;
-}
-
-.Footer-contact{
-    width: 50%;
-    height: 80%;
-
-    display: flex;
-    justify-content: flex-end;
-    padding-right: 200px;
-    border: thin solid purple;
-}
-
-.Footer-contact-box{
-    width: 50%;
-    height: 100%;
-
-    display: flex;
-    flex-direction: column;
+    width: 30%;
 }

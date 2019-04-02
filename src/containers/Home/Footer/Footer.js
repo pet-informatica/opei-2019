@@ -66,7 +66,7 @@ export default class Footer extends Component {
             <Grid.Row>
               <Grid.Column  width={5}> 
                 <div className="Footer-pet-logo">
-                    <Image fluid src='https://res.cloudinary.com/dkbuneg9h/image/upload/v1554168587/Clypeasteroida_ahtawr.svg' size="small">
+                    <Image src='https://res.cloudinary.com/dkbuneg9h/image/upload/v1554168587/Clypeasteroida_ahtawr.svg' size="small">
                     </Image>
                 
               </div>
@@ -80,8 +80,8 @@ export default class Footer extends Component {
 
               <Grid.Column width={5}> 
                 <div className="Footer-pet-social">
-                  <Icon name="instagram" size="large"></Icon>
-                  <Icon name="facebook" size="large"></Icon>
+                  <Icon name="instagram" size="large" inverted></Icon>
+                  <Icon name="facebook" size="large" inverted></Icon>
                 </div> 
               </Grid.Column>
          

@@ -1,10 +1,7 @@
 import React, { Component } from 'react';
-import {Grid} from 'semantic-ui-react';
+import {Grid, Image, Icon} from 'semantic-ui-react';
 import Columns from '../../../components/Columns/Columns'
-
-
 import './Footer.css'
-
 
 export default class Footer extends Component {
   render() {
@@ -28,32 +25,31 @@ export default class Footer extends Component {
     ]
 
     return (
-      <div className="Footer">
-       <Grid className="Grid-1" stackable>
+    <div className="Footer">
+    <div className="Footer-top">
+      <Grid className="Footer-Grid-1" stackable>
         <Grid.Row className="Grid-row1" columns={2}>
           <Grid.Column>
             <Grid stackable>
-            
-              <Grid.Row columns={3}>
-                <Grid.Column>
-                  <div className="Footer-OPEI">
-                    <Columns title="OPEI" data={links_opei} />
-                  </div>
-                </Grid.Column>
-                <Grid.Column>
-                  <div className="Footer-provas">
-                    <Columns title="Provas Antigas" data={links_provas_antigas}/>
-                  </div>
-                </Grid.Column>
-                <Grid.Column>
-                  <div className="Footer-info">
-                    <Columns title="Informações" data={links_informacoes}/>
-                  </div>
-                </Grid.Column>
-              </Grid.Row>
               
+                <Grid.Row columns={3}>
+                  <Grid.Column>
+                    <div className="Footer-OPEI">
+                      <Columns title="OPEI" data={links_opei} />
+                    </div>
+                  </Grid.Column>
+                  <Grid.Column>
+                    <div className="Footer-provas">
+                      <Columns title="Provas Antigas" data={links_provas_antigas}/>
+                    </div>
+                  </Grid.Column>
+                  <Grid.Column>
+                    <div className="Footer-info">
+                      <Columns title="Informações" data={links_informacoes}/>
+                    </div>
+                  </Grid.Column>
+                </Grid.Row>
             </Grid>
-             
           </Grid.Column>
           <Grid.Column>
             <div className="Fotter-top-right">
@@ -63,32 +59,36 @@ export default class Footer extends Component {
             </div>
           </Grid.Column>
         </Grid.Row>
-       </Grid>
-        
+      </Grid>
 
-        <Grid  stackable>
-          <Grid.Row  columns={3}>
-            <Grid.Column> 
-              <div className="Footer-pet-logo">
-                  coisas
-              </div> 
-            </Grid.Column>
+      </div>
+        <Grid stackable>
+            <Grid.Row>
+              <Grid.Column  width={5}> 
+                <div className="Footer-pet-logo">
+                    <Image fluid src='https://res.cloudinary.com/dkbuneg9h/image/upload/v1554168587/Clypeasteroida_ahtawr.svg' size="small">
+                    </Image>
+                
+              </div>
+              </Grid.Column>
 
-            <Grid.Column>
-                <div className="Footer-pet-rights">
-                coisas
+              <Grid.Column width={5}>
+                  <div className="Footer-pet-rights">
+                    <p>© 2019 OPEI - Todos os direitos reservados</p>
+                  </div> 
+              </Grid.Column>
+
+              <Grid.Column width={5}> 
+                <div className="Footer-pet-social">
+                  <Icon name="instagram" size="large"></Icon>
+                  <Icon name="facebook" size="large"></Icon>
                 </div> 
-            </Grid.Column>
-
-            <Grid.Column> 
-              <div className="Footer-pet-social">
-                coisas
-              </div> 
-            </Grid.Column>
-          </Grid.Row>
+              </Grid.Column>
+         
+            </Grid.Row>
         </Grid>
     
-      </div>
+    </div>
     )
   }
 }

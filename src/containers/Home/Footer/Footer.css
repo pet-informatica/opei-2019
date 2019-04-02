@@ -3,11 +3,14 @@
     background-color: #212121;
 }
 
+.Footer-Grid-1{
+    margin-bottom: 100px;
+}
 
 
 .Grid-column3{
     display: flex;
-    border: thin solid black;
+   
 }
 
 .Grid-row1{
@@ -21,16 +24,42 @@
 }
 
 .Footer-pet-logo{
-    width: 30%;
+    width: 100%;
     height: 100%;
+    
+    margin: 0 auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
 }
 
+
+
 .Footer-pet-rights{
-    width: 30%;
-    height: 100%;}
+    width: 100%;
+    height: 100%;
+    color: white;
+    text-align: center;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+    
+}
+
 .Footer-pet-social{
-    width: 30%;
-    height: 100%;}
+    width: 100%;
+    height: 100%;
+    text-align: center;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+}
 
 .Footer-contato{
     display: flex;
@@ -41,4 +70,8 @@
 .Footer-info{
     display: flex;
     width: 30%;
+}
+
+.Footer-top{
+    margin-bottom: 50px;
 }

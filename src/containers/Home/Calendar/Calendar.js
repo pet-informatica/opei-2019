@@ -9,7 +9,7 @@ export default class Calendar extends Component {
     return (
       <div className="Calendar">
             <Title name="Calendário"/>
-            <Grid columns={4} id="Calendar-cards">
+            <Grid stackable columns={4} id="Calendar-cards">
                 <Grid.Row stretched>
                         <Grid.Column>
                             <Card fluid color='blue' header='Inscrições' meta='{data inicio} a {data fim}' />

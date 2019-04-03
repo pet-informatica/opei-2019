@@ -10,17 +10,23 @@
     height: 500px;
 }
 
-.About-content{
-    width: 40%;
-    border: thin black solid;
+.About-content-wrapper{
+    width: 80%;
 
     text-align: right;
     margin-right: 100px;
+
+}
+
+.About-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
 }
 
 .About-image{
     width: 40%;
-    border: thin black solid;
+   
 }
 
 .About-text{
@@ -29,7 +35,30 @@
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    
-    border: thin black solid;
 
+}
+
+.About-wrapper{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.About-segment{
+    display: flex;
+    justify-content: flex-end;
+    align-content: flex-end;
+    
+}
+
+.teste1{
+    
+}
+
+.teste2{
+    
+}
+
+.Segment-teste{
+    display: flex;
+    flex-direction: column;
 }

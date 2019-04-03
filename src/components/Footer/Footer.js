@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import {Grid, Image, Icon} from 'semantic-ui-react';
-import Columns from '../../../components/Columns/Columns'
+import Columns from './../Columns/Columns'
 import './Footer.css'
 
 export default class Footer extends Component {

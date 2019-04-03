@@ -1,13 +1,10 @@
 import React, { Component } from 'react';
-import Landing from './Landing/Landing'
-import About from './About/About'
 import Footer from './../../components/Footer/Footer'
-import Calendar from './Calendar/Calendar'
 import Navbar from './../../components/Navbar/Navbar'
-import Sponsers from './Sponsers/Sponsers'
-import './Home.css'
+import FAQ from './../../components/FAQ/FAQ';
+import Calendar from '../Home/Calendar/Calendar';
 
-export default class Home extends Component {
+export default class AboutPage extends Component {
 
   state = {
     mobile: window.innerWidth < 500
@@ -21,12 +18,9 @@ export default class Home extends Component {
 
   render() {
     return (
-        <div className="Home">
+        <div className="AboutPage">
           <Navbar>
-          <Landing />
-          <About isMobile={this.state.mobile}/>
-          <Calendar />
-          <Sponsers />
+          <FAQ />
           <Footer />
           </Navbar>
         </div>

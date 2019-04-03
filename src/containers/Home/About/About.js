@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Title from '../../../components/Title/Title';
+import { HashLink as Link } from 'react-router-hash-link';
 import './About.css'
 
 export default class About extends Component {
@@ -13,7 +14,8 @@ export default class About extends Component {
             <div className="About-text">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus id nunc non dolor malesuada venenatis.
                
-                <a href="/About">perguntas frequentes, modalidades e mais</a>
+                <Link to="/About#perguntas-frequentes">perguntas frequentes</Link>
+                <a href="/About">modalidades e mais</a>
             </div>
           </div>
       </div>

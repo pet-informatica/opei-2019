@@ -3,6 +3,7 @@ import Landing from './Landing/Landing'
 import About from './About/About'
 import Footer from './Footer/Footer'
 import Calendar from './Calendar/Calendar'
+import Sponsers from './Sponsers/Sponsers'
 import './Home.css'
 
 export default class Home extends Component {
@@ -23,6 +24,7 @@ export default class Home extends Component {
         <Landing />
         <About isMobile={this.state.mobile}/>
         <Calendar />
+        <Sponsers />
         <Footer />
       </div>
     )

@@ -1,4 +1,25 @@
+@font-face {
+  font-family: 'AlwynNewRounded-Light';
+  font-style: normal;
+  font-weight: 400;
+  src:
+    local('AlwynNewRounded-Light'),
+    local('AlwynNewRounded-Light'),
+    url(./assets/fonts/AlwynNewRounded-Light.ttf) format('ttf'), 
+}
+
+@font-face {
+  font-family: 'AlwynNewRounded-Bold';
+  font-style: normal;
+  font-weight: 400;
+  src:
+    local('AlwynNewRounded-Bold'),
+    local('AlwynNewRounded-Bold'),
+    url(./assets/fonts/AlwynNewRounded-Light.ttf) format('ttf'), 
+}
+
 .App {
+  
   text-align: center;
 }
 
@@ -31,3 +52,5 @@
     transform: rotate(360deg);
   }
 }
+
+

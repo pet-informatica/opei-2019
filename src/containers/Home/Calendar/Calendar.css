@@ -5,9 +5,11 @@
     display: flex;
     justify-content: center;
     flex-direction: column;
+   
 
 }
 
 #Calendar-cards {
     padding: 20px 40px 20px 40px;
+    font-family: AlwynNewRounded-Light;
 }

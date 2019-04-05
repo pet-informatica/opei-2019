@@ -5,7 +5,7 @@ import logo from '../../../assets/logo.svg';
 
 export default class Sponsors extends Component {
     render() {
-        {/*number os columns may change and size of images too*/}
+        
         return (
             <div className="Home">
                 <Title name= "Realização"/>

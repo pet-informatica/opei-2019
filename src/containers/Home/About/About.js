@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import Title from '../../../components/Title/Title';
 import {Responsive, Segment, Image} from 'semantic-ui-react';
-import YouTube from 'react-youtube';
 import { HashLink as Link } from 'react-router-hash-link';
 import './About.css'
 
@@ -14,7 +13,7 @@ export default class About extends Component {
 
                 <div className="About-text">
                   <Title name="Sobre"/>
-                  <Segment basic className="About-segment" className="Segment-teste">
+                  <Segment basic className="About-segment">
                   <div className="About-self-text">
                     <p>
                         A Olimpíada Pernambucana de Informática, OPEI, é uma competição para os estudantes de Ensinos Fundamental, 

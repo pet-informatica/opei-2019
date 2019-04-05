@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import Footer from './../../components/Footer/Footer'
 import Navbar from './../../components/Navbar/Navbar'
 import FAQ from './../../components/FAQ/FAQ';
-import Calendar from '../Home/Calendar/Calendar';
 
 export default class AboutPage extends Component {
 

@@ -1,5 +1,5 @@
 .About {
-  
+    font-family: 'AlwynNewRounded-Light';
 }
 
 .About{
@@ -11,11 +11,10 @@
 }
 
 .About-content-wrapper{
-    width: 80%;
-
-    text-align: right;
-    margin-right: 100px;
-
+    width: 100%;
+    text-align: left;
+    margin-right: 0;
+    padding-right: 0;
 }
 
 .About-content{
@@ -25,40 +24,39 @@
 }
 
 .About-image{
-    width: 40%;
    
 }
 
 .About-text{
     height: 40%;
+    width: 70%;
+    margin-left: 50px;
 
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-
+    
 }
 
 .About-wrapper{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-evenly; 
+    
 }
 
 .About-segment{
     display: flex;
     justify-content: flex-end;
     align-content: flex-end;
-    
+
 }
 
-.teste1{
-    
+.About-self-text p{
+   font-size: 25px;
+   font-family: AlwynNewRounded-Light;
+  
 }
 
-.teste2{
-    
-}
-
-.Segment-teste{
-    display: flex;
-    flex-direction: column;
+p {
+    font-family: AlwynNewRounded-Light;
 }

@@ -8,12 +8,18 @@ export default class About extends Component {
   render() {
     return (
           <div className="About-wrapper"> 
+              <Responsive  basic minWidth={992}>
+                <div className="About-image">
+                <Image src="https://res.cloudinary.com/dkbuneg9h/image/upload/v1554503786/try4_nk54bf.png" size="large"/>
+                </div>
+              </Responsive>
               <Responsive as={Segment} basic >
                 <div className="About-content-wrapper">  
 
                 <div className="About-text">
-                  <Title name="Sobre"/>
+                 
                   <Segment basic className="About-segment">
+                  <Title name="Sobre"/>
                   <div className="About-self-text">
                     <p>
                         A Olimpíada Pernambucana de Informática, OPEI, é uma competição para os estudantes de Ensinos Fundamental, 
@@ -32,11 +38,6 @@ export default class About extends Component {
                 </div>
               </Responsive>
               
-              <Responsive  basic minWidth={992}>
-                <div className="About-image">
-                <Image src="https://res.cloudinary.com/dkbuneg9h/image/upload/v1554428363/try4_j0so6j.png" size="large"/>
-                </div>
-              </Responsive>
              
             </div>
     )

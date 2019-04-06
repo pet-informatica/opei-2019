@@ -23,10 +23,6 @@
     justify-content: flex-end;
 }
 
-.About-image{
-   
-}
-
 .About-text{
     height: 40%;
     width: 70%;
@@ -50,11 +46,15 @@
     align-content: flex-end;
     flex-direction: column;
 
+   
+
 }
+
 
 .About-self-text p{
    font-size: 25px;
    font-family: AlwynNewRounded-Light;
+ 
   
 }
 

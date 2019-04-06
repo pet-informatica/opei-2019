@@ -64,19 +64,17 @@ export default class Footer extends Component {
       </div>
         <Grid stackable>
             <Grid.Row>
-              <Grid.Column  width={5}> 
-                <div className="Footer-pet-logo">
-                    <Image src='https://res.cloudinary.com/dkbuneg9h/image/upload/v1554168587/Clypeasteroida_ahtawr.svg' size="small">
-                    </Image>
-                
-              </div>
-              </Grid.Column>
-
               <Grid.Column width={5}>
                   <div className="Footer-pet-rights">
                     <p>© 2019 OPEI - Todos os direitos reservados</p>
                   </div> 
               </Grid.Column>
+              <Grid.Column  width={5}> 
+                <div className="Footer-pet-logo">
+                
+                </div>
+              </Grid.Column>
+
 
               <Grid.Column width={5}> 
                 <div className="Footer-pet-social">

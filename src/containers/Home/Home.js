@@ -3,7 +3,6 @@ import Landing from './Landing/Landing'
 import About from './About/About'
 import Footer from './../../components/Footer/Footer'
 import Calendar from './Calendar/Calendar'
-import Navbar from './../../components/Navbar/Navbar'
 import Sponsors from './Sponsors/Sponsors'
 import News from './News/News'
 import './Home.css'
@@ -23,7 +22,6 @@ export default class Home extends Component {
   render() {
     return (
         <div className="Home">
-          <Navbar>
           <Landing/>
           <News/>
           <About isMobile={this.state.mobile}/>
@@ -31,7 +29,6 @@ export default class Home extends Component {
           
           <Sponsors/>
           <Footer/>
-          </Navbar>
         </div>
     )
   }

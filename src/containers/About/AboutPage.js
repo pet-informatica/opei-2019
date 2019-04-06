@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import Footer from './../../components/Footer/Footer'
-import Navbar from './../../components/Navbar/Navbar'
 import FAQ from './../../components/FAQ/FAQ';
 
 export default class AboutPage extends Component {
@@ -18,10 +17,8 @@ export default class AboutPage extends Component {
   render() {
     return (
         <div className="AboutPage">
-          <Navbar>
           <FAQ />
           <Footer />
-          </Navbar>
         </div>
     )
   }

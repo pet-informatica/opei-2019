@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import Accordion from './../Accordion/AccordionCustom';
 import Title from './../Title/Title';
 import { HashLink as Link } from 'react-router-hash-link';
+import { Grid, GridRow } from 'semantic-ui-react';
 
 export default class FAQ extends Component{
 	render(){
@@ -26,10 +27,13 @@ export default class FAQ extends Component{
 		];
 		return(
 			<div className="index-page">
-				<div className="index-anchor" id="perguntas-frequentes"/>
 				<Title name="Perguntas Frequentes"/>
-				<p className="index-sectionText" style={{marginBottom: "40px"}}>Tem alguma dúvida? Veja se encontra a resposta aqui! Caso contrário, entre em <Link to="/#contato">contato</Link> conosco! </p>						
-				<Accordion items={items}/>
+				<p style={{marginBottom: "40px"}}>Tem alguma dúvida? Veja se encontra a resposta aqui! Caso contrário, entre em <Link to="/#contato">contato</Link> conosco! </p>						
+				<Grid>
+					<GridRow className="Accordion">
+						<Accordion items={items}/>
+					</GridRow>
+				</Grid>
 			</div>
 		);
 	}

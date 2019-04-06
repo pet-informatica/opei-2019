@@ -4,6 +4,7 @@ import './List.css'
 
 export default class List extends Component {
   render() {
+    
     const {items} = this.props;
 
     const nameList = items.map(item => {
@@ -13,7 +14,7 @@ export default class List extends Component {
         </li>
       )
     })
-    
+
     return (
       <div className="Items">
         <ul>{nameList}</ul>

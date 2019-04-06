@@ -1,14 +1,14 @@
 import React, { Component } from 'react';
-import {Grid, Image, Icon} from 'semantic-ui-react';
-import Columns from './../Columns/Columns'
-import './Footer.css'
+import {Grid, Icon, Segment} from 'semantic-ui-react';
+import Columns from './../Columns/Columns';
+import './Footer.css';
 
 export default class Footer extends Component {
   render() {
     const links_opei = [
       {"name": "Home", "route": "/"},
       {"name": "Sobre", "route": "/About"},
-      {"name": "Contato", "route": "/Contact"}
+      
     ]
 
     const links_provas_antigas = [
@@ -52,10 +52,13 @@ export default class Footer extends Component {
             </Grid>
           </Grid.Column>
           <Grid.Column>
-            <div className="Fotter-top-right">
-              <div className="Footer-contato">
-                <Columns title="Fale Conosco" data={links_opei} />
-              </div>
+            <div className="Footer-contact">
+              
+                <h3>PET-Informática</h3>
+                <p>Av. Jorn. Aníbal Fernandes - Cidade Universitária, Recife.</p>
+                <p> opei@cin.ufpe.br </p>
+                <p>(81) 2126-4056</p>
+             
             </div>
           </Grid.Column>
         </Grid.Row>

@@ -1,6 +1,8 @@
 .Footer{
     padding-top: 50px;
     background-color: #212121;
+
+  
 }
 
 .Footer-Grid-1{
@@ -66,8 +68,26 @@
 .Footer-info{
     display: flex;
     width: 30%;
+
+   
 }
 
 .Footer-top{
     margin-bottom: 50px;
+}
+
+.Footer-contact{
+    color: white;
+    font-family: AlwynNewRounded-Light;
+
+   
+}
+
+.Footer-provas{
+   
+}
+
+.Footer-contact h3 {
+    padding-top: 0;
+    margin-top: 0;
 }

@@ -80,7 +80,7 @@ const NavBarDesktop = (
                 <Grid columns={4} id="Menu-items">
                   <Grid.Row>
                     <Grid.Column>
-                      <Menu.Item as={Link} name='inscricao' active={activeItem === 'inscricao'} content='Inscricao' to='/#inscricao' onClick={onClick}/>
+                      <Menu.Item as={Link} name='inscricao' active={activeItem === 'inscricao'} content='Inscrição' to='/#inscricao' onClick={onClick}/>
                     </Grid.Column>
                     <Grid.Column>
                       <Menu.Item as={Link} name='sobre' active={activeItem === 'sobre'} content='Sobre' to='/sobre' onClick={onClick}/>

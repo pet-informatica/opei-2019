@@ -1,10 +1,10 @@
 import React, {Component} from 'react';
 import Title from './../../../components/Title/Title';
-import { Grid, Card, GridColumn, Menu, Container, GridRow } from 'semantic-ui-react';
+import { Grid, Card, GridColumn, GridRow } from 'semantic-ui-react';
 
 import './Modality.css'
 
-export default class FAQ extends Component{
+export default class Modality extends Component{
 	render(){
 		return(
             <div className="Modality">

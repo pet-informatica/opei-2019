@@ -8,7 +8,9 @@ export default class Calendar extends Component {
    
     return (
       <div className="Calendar">
+      <div className="Calendar-title">
             <Title name="Calendário"/>
+      </div>
             <Grid stackable columns={4} id="Calendar-cards">
                 <Grid.Row stretched>
                         <Grid.Column>

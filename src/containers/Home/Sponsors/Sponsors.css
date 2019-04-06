@@ -1,12 +1,16 @@
-.Sponsors{
+/* .Sponsors{
     width: 100%;
     height: 100%;
     padding-bottom: 30px;
+    margin-bottom: 15px;
     display: flex;
     justify-content: center;
+    align-content: center;
     flex-direction: column;
-}
+} */
 
-#Sponsors-Cards {
-    padding: 20px 40px 20px 40px;
-}
+/* .Sponsors-Cards {
+    padding: 20px 400px 20px 40px;
+    align-content: center;
+    font-family: AlwynNewRounded-Light;
+} */

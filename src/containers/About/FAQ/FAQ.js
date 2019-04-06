@@ -1,8 +1,10 @@
 import React, {Component} from 'react';
-import Accordion from './../Accordion/AccordionCustom';
-import Title from './../Title/Title';
+import Accordion from './../../../components/Accordion/AccordionCustom';
+import Title from './../../../components/Title/Title';
 import { HashLink as Link } from 'react-router-hash-link';
-import { Grid, GridRow } from 'semantic-ui-react';
+import { Grid, GridRow, Container } from 'semantic-ui-react';
+
+import './FAQ.css'
 
 export default class FAQ extends Component{
 	render(){
@@ -26,14 +28,17 @@ export default class FAQ extends Component{
 			}
 		];
 		return(
-			<div className="index-page">
+			<div>
 				<Title name="Perguntas Frequentes"/>
-				<p style={{marginBottom: "40px"}}>Tem alguma dúvida? Veja se encontra a resposta aqui! Caso contrário, entre em <Link to="/#contato">contato</Link> conosco! </p>						
-				<Grid>
-					<GridRow className="Accordion">
-						<Accordion items={items}/>
-					</GridRow>
-				</Grid>
+				<p>Tem alguma dúvida? Veja se encontra a resposta aqui! Caso contrário, entre em <Link to="/#contato">contato</Link> conosco! </p>						
+				<Container>
+					<Grid>
+						<GridRow id="accordion-item">
+							<Accordion items={items}/>
+						</GridRow>
+					</Grid>
+				</Container>
+				
 			</div>
 		);
 	}

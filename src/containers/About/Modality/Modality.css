@@ -1,0 +1,5 @@
+.ui.card>.content>.header {
+    display: flex;
+    justify-content: center;
+}
+

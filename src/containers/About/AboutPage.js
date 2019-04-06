@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Footer from './../../components/Footer/Footer'
-import FAQ from './../../components/FAQ/FAQ';
+import FAQ from './FAQ/FAQ'
+import Modality from './Modality/Modality'
 
 export default class AboutPage extends Component {
 
@@ -17,6 +18,7 @@ export default class AboutPage extends Component {
   render() {
     return (
         <div className="AboutPage">
+          <Modality />
           <FAQ />
           <Footer />
         </div>

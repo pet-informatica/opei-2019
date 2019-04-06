@@ -5,6 +5,7 @@ import Footer from './../../components/Footer/Footer'
 import Calendar from './Calendar/Calendar'
 import Navbar from './../../components/Navbar/Navbar'
 import Sponsors from './Sponsors/Sponsors'
+import News from './News/News'
 import './Home.css'
 
 export default class Home extends Component {
@@ -24,8 +25,10 @@ export default class Home extends Component {
         <div className="Home">
           <Navbar>
           <Landing/>
+          <News/>
           <About isMobile={this.state.mobile}/>
           <Calendar/>
+          
           <Sponsors/>
           <Footer/>
           </Navbar>

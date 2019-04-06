@@ -82,6 +82,7 @@ export default class Footer extends Component {
                 <div className="Footer-pet-social">
                   <Icon name="instagram" size="large" inverted></Icon>
                   <Icon name="facebook" size="large" inverted></Icon>
+                  <Icon name="twitter" size="large" inverted></Icon>
                 </div> 
               </Grid.Column>
          

@@ -12,7 +12,7 @@ export default class AboutCard extends Component {
                         <GridColumn>
                                 <div className="About-content-wrapper">  
                                     <div className="AboutCard-text">
-                                        <Header as='h2' dividing>Sobre a OPEI</Header>
+                                        <Header as='h2' >Sobre a OPEI</Header>
                                     </div>
 
                                     <div className="About-self-text" >

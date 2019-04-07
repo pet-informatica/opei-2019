@@ -19,7 +19,7 @@ export default class Purpose extends Component {
                             <GridColumn>
                                     <div className="Purpose-content-wrapper">  
                                     <div className="Purpose-title">
-                                        <Header as='h2' dividing>Objetivo</Header>
+                                        <Header as='h2'>Objetivo</Header>
                                     </div>
                                         <div className="Purpose-self-text" >
                                             <p style={{fontSize: '16px', marginTop: '10px'}}>

@@ -95,7 +95,7 @@ const NavBarDesktop = (
                     <Grid.Column>
                       <Dropdown name='pratique' active={activeItem === 'pratique'} text='Pratique' pointing='top' className='link item'>
                         <Dropdown.Menu>
-                          <Dropdown.Item as={Link} to='/pratique#prova-teorica'>Prova Teórica</Dropdown.Item>
+                          <Dropdown.Item> <a target="_blank" href="https://drive.google.com/drive/u/0/folders/16MxxLMiEgpY3VO3QCN54VgKOimkTILlc">Prova Teórica</a></Dropdown.Item>
                           <Dropdown.Item as={Link} to='/pratique#prova-pratica'>Prova Prática</Dropdown.Item>
                         </Dropdown.Menu>
                       </Dropdown>
@@ -105,7 +105,7 @@ const NavBarDesktop = (
                     </Grid.Column>
                     <Grid.Column>
                       <Menu.Item as={Link} name='inscricao' active={activeItem === 'inscricao'} to='/#inscricao' onClick={onClick}>
-                        <Button>Inscrição</Button>
+                        <Button disabled>Inscrições</Button>
                       </Menu.Item> 
                     </Grid.Column>
                   </Grid.Row>

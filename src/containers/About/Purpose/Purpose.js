@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Title from '../../../components/Title/Title';
-import {Responsive, Segment, Embed, Container, Grid, GridRow, GridColumn} from 'semantic-ui-react';
+import {Responsive, Embed, Container, Grid, GridRow, GridColumn} from 'semantic-ui-react';
  import './Purpose.css'
 
 export default class Purpose extends Component {

@@ -13,8 +13,8 @@ export default class Modality extends Component{
                         <Title name="Modalidades"/>
                     </div>
                     <div className="Modality-cards-wrapper">
-                        <Grid celled stackable columns={4} >
-                            <Grid.Row>
+                        <Grid padded stackable columns={4} >
+                            <Grid.Row stretched>
                                 <Grid.Column width={1}>
                                 </Grid.Column>
                                 <Grid.Column width={7}>

@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import {Grid, Icon, Segment} from 'semantic-ui-react';
+import {Grid, Icon} from 'semantic-ui-react';
 import Columns from './../Columns/Columns';
 import './Footer.css';
 

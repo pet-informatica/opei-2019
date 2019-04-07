@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import Accordion from './../../../components/Accordion/AccordionCustom';
 import Title from './../../../components/Title/Title';
 import { HashLink as Link } from 'react-router-hash-link';
-import { Grid, GridRow, Container } from 'semantic-ui-react';
+import { Grid, GridRow } from 'semantic-ui-react';
 
 import './FAQ.css'
 
@@ -29,7 +29,7 @@ export default class FAQ extends Component{
 		];
 		return(
 			<div className="FAQ-wrapper">
-				<Grid celled>
+				<Grid padded>
 					<GridRow>
 						<Grid.Column width={1}></Grid.Column>
 						<Grid.Column width={14}>
@@ -41,7 +41,7 @@ export default class FAQ extends Component{
 						<Grid.Column width={1}></Grid.Column>
 					</GridRow>
 				</Grid>
-				<Grid celled>
+				<Grid padded>
 					<GridRow id="accordion-item">
 						<Grid.Column width={1}></Grid.Column>
 						<Grid.Column width={14}>

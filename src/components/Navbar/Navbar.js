@@ -8,7 +8,9 @@ import {
   Sidebar,
   Responsive,
   Segment,
-  Grid
+  Grid,
+  Dropdown,
+  Button
 } from "semantic-ui-react";
 
 import { HashLink as Link } from 'react-router-hash-link';
@@ -39,8 +41,10 @@ const NavBarMobile = ({
       >
         <Menu.Item as={Link} name="inscricao" content="Inscrição" to="/#inscricao" active={activeItem === 'inscricao'} onClick={onClick}/>
         <Menu.Item as={Link} name="sobre" content="Sobre" to="/sobre" active={activeItem === 'sobre'} onClick={onClick}/>
-        <Menu.Item as={Link} name="pratique" content="Pratique" to="/pratique#prova-teorica" active={activeItem === 'pratique'} onClick={onClick}/>
-        <Menu.Item as={Link} name="noticias" content="Notícias" to="/noticias" active={activeItem === 'noticias'} onClick={onClick}/>
+        <Menu.Item as={Link} name="regulamento" content="Regulamento" to="/regulamento" active={activeItem === 'regulamento'} onClick={onClick}/>
+        <Menu.Item as={Link} name="pratique-teorica" content="Provas Teóricas" to="/pratique#prova-teorica" active={activeItem === 'pratique-teorica'} onClick={onClick}/>
+        <Menu.Item as={Link} name="pratique-pratica" content="Provas Práticas" to="/pratique#prova-pratica" active={activeItem === 'pratique-pratica'} onClick={onClick}/>
+        <Menu.Item as={Link} name="faq" content="Perguntas Frequentes" to="/sobre#perguntas-frequentes" active={activeItem === 'faq'} onClick={onClick}/>
       </Sidebar>
     <Sidebar.Pushable as={Segment} style={{marginTop: "-1px"}}>
       <Sidebar.Pusher
@@ -69,7 +73,7 @@ const NavBarDesktop = (
     onClick
 ) => (
     <div className="Navbar">
-        <Menu text>
+        <Menu text >
             <Menu.Menu position="left">
                 <Menu.Item as={Link} to="/#inscricao">
                     <Image size="small" src="https://res.cloudinary.com/dkbuneg9h/image/upload/v1554237827/OPEI_euzbhs.svg" />
@@ -80,16 +84,29 @@ const NavBarDesktop = (
                 <Grid columns={4} id="Menu-items">
                   <Grid.Row>
                     <Grid.Column>
-                      <Menu.Item as={Link} name='inscricao' active={activeItem === 'inscricao'} content='Inscrição' to='/#inscricao' onClick={onClick}/>
+                      <Dropdown name='informacoes' active={activeItem === 'informacoes'} text='Informações' pointing="top" className='link item'>
+                        <Dropdown.Menu>
+                          <Dropdown.Item as={Link} to="/sobre">Sobre</Dropdown.Item>
+                          <Dropdown.Item as={Link} to="/material-divulgacao">Material de divulgação</Dropdown.Item>
+                          <Dropdown.Item as={Link} to="/regulamento">Regulamento</Dropdown.Item>
+                        </Dropdown.Menu>
+                      </Dropdown>
                     </Grid.Column>
                     <Grid.Column>
-                      <Menu.Item as={Link} name='sobre' active={activeItem === 'sobre'} content='Sobre' to='/sobre' onClick={onClick}/>
+                      <Dropdown name='pratique' active={activeItem === 'pratique'} text='Pratique' pointing='top' className='link item'>
+                        <Dropdown.Menu>
+                          <Dropdown.Item as={Link} to='/pratique#prova-teorica'>Prova Teórica</Dropdown.Item>
+                          <Dropdown.Item as={Link} to='/pratique#prova-pratica'>Prova Prática</Dropdown.Item>
+                        </Dropdown.Menu>
+                      </Dropdown>
                     </Grid.Column>
                     <Grid.Column>
-                      <Menu.Item as={Link} name='pratique' active={activeItem === 'pratique'} content='Pratique' to='/pratique#prova-teorica' onClick={onClick}/>
+                      <Menu.Item as={Link} name='faq' active={activeItem === 'faq'} content='Perguntas Frequentes' to='/sobre#perguntas-frequentes' onClick={onClick}/>
                     </Grid.Column>
                     <Grid.Column>
-                      <Menu.Item as={Link} name='noticias' active={activeItem === 'noticias'} content='Notícias' to='/noticias' onClick={onClick}/>
+                      <Menu.Item as={Link} name='inscricao' active={activeItem === 'inscricao'} to='/#inscricao' onClick={onClick}>
+                        <Button>Inscrição</Button>
+                      </Menu.Item> 
                     </Grid.Column>
                   </Grid.Row>
                    

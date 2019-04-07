@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import {Responsive, Segment, Image} from 'semantic-ui-react';
+import {Responsive, Segment} from 'semantic-ui-react';
 import { Tweet } from 'react-twitter-widgets'
 import './News.css'
 

@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
-import Title from '../../../components/Title/Title';
-import { Image, Grid, GridColumn } from 'semantic-ui-react';
+import { Image, Grid } from 'semantic-ui-react';
 
 export default class Sponsors extends Component {
     render() {

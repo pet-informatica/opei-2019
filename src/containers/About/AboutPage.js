@@ -20,10 +20,18 @@ export default class AboutPage extends Component {
   render() {
     return (
         <div className="AboutPage">
-          <AboutCard />
-          <Purpose />
-          <Modality />
-          <FAQ />
+          <div className="index-anchor" id="sobre">
+            <AboutCard />
+          </div>
+          <div className="index-anchor" id="objetivo">
+            <Purpose />
+          </div>
+          <div className="index-anchor" id="modalidades">
+            <Modality />
+          </div>
+          <div className="index-anchor" id="perguntas-frequentes">
+            <FAQ />
+          </div>
           <Footer />
         </div>
     )

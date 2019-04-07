@@ -3,3 +3,32 @@
     justify-content: center;
 }
 
+.Modality-title{
+
+    width: 70%;
+    margin-left: 7%;
+
+    display: flex;
+    align-content: flex-start;
+    justify-content: flex-start;
+
+
+}
+
+.Modality-wrapper{
+    display: flex;
+    justify-content: center;
+
+    margin-top: 15px;
+
+}
+
+.Modality-cards-wrapper{
+    display: flex;
+    flex-direction: row wrap;
+    align-content: center;
+
+    width: 100%;
+    
+
+}

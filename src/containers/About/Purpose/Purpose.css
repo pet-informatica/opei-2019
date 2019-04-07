@@ -1,5 +1,22 @@
 .Purpose-content-wrapper {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+
+    margin-bottom: 10px;
+}
+
+.Purpose-title{
+    display: flex; 
+    flex-direction: row;
+    justify-content: flex-end;
+    width: 100%;
+    
+}
+
+.Purpose-self-text{
+    display: flex;
+    text-align: justify;
+   
 }

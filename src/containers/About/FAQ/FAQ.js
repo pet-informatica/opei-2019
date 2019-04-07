@@ -28,17 +28,29 @@ export default class FAQ extends Component{
 			}
 		];
 		return(
-			<div>
-				<Title name="Perguntas Frequentes"/>
-				<p>Tem alguma dúvida? Veja se encontra a resposta aqui! Caso contrário, entre em <Link to="/#contato">contato</Link> conosco! </p>						
-				<Container>
-					<Grid>
-						<GridRow id="accordion-item">
+			<div className="FAQ-wrapper">
+				<Grid celled>
+					<GridRow>
+						<Grid.Column width={1}></Grid.Column>
+						<Grid.Column width={14}>
+							<div className="FAQ-Title">
+								<Title name="Perguntas Frequentes"/>
+								<p>Tem alguma dúvida? Veja se encontra a resposta aqui! Caso contrário, entre em <Link to="/#contato">contato</Link> conosco! </p>						
+							</div>
+						</Grid.Column>
+						<Grid.Column width={1}></Grid.Column>
+					</GridRow>
+				</Grid>
+				<Grid celled>
+					<GridRow id="accordion-item">
+						<Grid.Column width={1}></Grid.Column>
+						<Grid.Column width={14}>
 							<Accordion items={items}/>
-						</GridRow>
-					</Grid>
-				</Container>
-				
+
+						</Grid.Column>
+						<Grid.Column width={1}></Grid.Column>
+					</GridRow>
+				</Grid>
 			</div>
 		);
 	}

@@ -1,0 +1,22 @@
+.AboutCard-wrapper{
+    margin-bottom: 10px;
+    
+}
+
+.AboutCard-text{
+    
+}
+
+.About-self-text{
+    display: flex;
+    text-align: justify;
+    
+}
+
+.AboutCard-image{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: flex-end;
+    
+}

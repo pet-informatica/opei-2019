@@ -37,8 +37,6 @@ export default class About extends Component {
                 </div>  
                 </div>
               </Responsive>
-              
-             
             </div>
     )
   }

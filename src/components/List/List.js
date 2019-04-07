@@ -10,7 +10,7 @@ export default class List extends Component {
     const nameList = items.map(item => {
       return (
         <li> 
-            <a href={item.route}> {item.name} </a>
+            <a target="_blank" href={item.route}> {item.name} </a>
         </li>
       )
     })

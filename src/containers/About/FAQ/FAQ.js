@@ -1,8 +1,7 @@
 import React, {Component} from 'react';
 import Accordion from './../../../components/Accordion/AccordionCustom';
-import Title from './../../../components/Title/Title';
 import { HashLink as Link } from 'react-router-hash-link';
-import { Grid, GridRow } from 'semantic-ui-react';
+import { Grid, GridRow, Header } from 'semantic-ui-react';
 
 import './FAQ.css'
 
@@ -34,8 +33,9 @@ export default class FAQ extends Component{
 						<Grid.Column width={1}></Grid.Column>
 						<Grid.Column width={14}>
 							<div className="FAQ-Title">
-								<Title name="Perguntas Frequentes"/>
-								<p>Tem alguma dúvida? Veja se encontra a resposta aqui! Caso contrário, entre em <Link to="/#contato">contato</Link> conosco! </p>						
+								<Header as='h2' dividing>Perguntas Frequentes
+									<Header.Subheader>Tem alguma dúvida? Veja se encontra a resposta aqui! Caso contrário, entre em <Link to="/#contato">contato</Link> conosco! </Header.Subheader>
+								</Header>
 							</div>
 						</Grid.Column>
 						<Grid.Column width={1}></Grid.Column>

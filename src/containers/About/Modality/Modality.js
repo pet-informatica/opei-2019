@@ -1,6 +1,5 @@
 import React, {Component} from 'react';
-import Title from './../../../components/Title/Title';
-import { Grid, Card, GridColumn, GridRow } from 'semantic-ui-react';
+import { Grid, Card, GridColumn, GridRow, Header } from 'semantic-ui-react';
 
 import './Modality.css'
 
@@ -10,13 +9,11 @@ export default class Modality extends Component{
             <div className="Modality-wrapper">
                     <div className="Modality">
                     <div className="Modality-title">
-                        <Title name="Modalidades"/>
+                        <Header as='h2' dividing>Modalidades</Header>
                     </div>
                     <div className="Modality-cards-wrapper">
-                        <Grid padded stackable columns={4} >
+                        <Grid centered padded stackable columns={2} >
                             <Grid.Row stretched>
-                                <Grid.Column width={1}>
-                                </Grid.Column>
                                 <Grid.Column width={7}>
                                     <Card fluid color="blue">
                                             <Card.Content>
@@ -53,9 +50,6 @@ export default class Modality extends Component{
                                         </Card.Content>
                                     </Card>
                                 </Grid.Column>
-                                <Grid.Column width={1}>
-                                </Grid.Column>
-                              
                             </Grid.Row>
                         </Grid>
                     </div>

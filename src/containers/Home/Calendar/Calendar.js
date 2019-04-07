@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Title from '../../../components/Title/Title';
-import { Card, Grid } from 'semantic-ui-react'
+import { Card, Grid, Header } from 'semantic-ui-react'
 import './Calendar.css'
 
 export default class Calendar extends Component {
@@ -9,7 +9,7 @@ export default class Calendar extends Component {
     return (
       <div className="Calendar">
         <div className="Calendar-title">
-              <Title name="Calendário"/>
+              <Header as='h1'>Calendário</Header>
         </div>
         <Grid stackable columns={4} id="Calendar-cards">
           <Grid.Row stretched>

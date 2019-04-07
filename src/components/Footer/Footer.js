@@ -12,10 +12,10 @@ export default class Footer extends Component {
     ]
 
     const links_provas_antigas = [
-      {"name": "2015", "route": "/"},
-      {"name": "2016", "route": "/"},
-      {"name": "2017", "route": "/"},
-      {"name": "2018", "route": "/"}
+      {"name": "2015", "route": "https://drive.google.com/drive/u/0/folders/1Pr1Fnhuyw9NrxsOashR_jhob0Ka1lD-W"},
+      {"name": "2016", "route": "https://drive.google.com/drive/u/0/folders/1umJ6HlR1XK01AlNQbANZd-936DnqexON"},
+      {"name": "2017", "route": "https://drive.google.com/drive/u/0/folders/13hx_KoLzcLkVf11fOgl0aUjkUZ6yTwr2"},
+      {"name": "2018", "route": "https://drive.google.com/drive/u/0/folders/1cctE4L_hmOWzD0dNL1Ue7ErZQ6cV8sCD"}
     ]
 
     const links_informacoes = [
@@ -31,7 +31,6 @@ export default class Footer extends Component {
         <Grid.Row className="Grid-row1" columns={2}>
           <Grid.Column>
             <Grid stackable>
-              
                 <Grid.Row columns={3}>
                   <Grid.Column>
                     <div className="Footer-OPEI">

@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import Title from '../../../components/Title/Title';
 import { Card, Grid, Header } from 'semantic-ui-react'
 import './Calendar.css'
 

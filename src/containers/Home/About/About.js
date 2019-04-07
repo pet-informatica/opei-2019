@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import Title from '../../../components/Title/Title';
 import {Responsive, Segment, Image, Header} from 'semantic-ui-react';
 import { HashLink as Link } from 'react-router-hash-link';
 import './About.css'

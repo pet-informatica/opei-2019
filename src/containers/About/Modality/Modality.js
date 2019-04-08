@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import { Grid, Card, GridColumn, GridRow, Header } from 'semantic-ui-react';
+import { Grid, Card, GridColumn, GridRow, Header, Responsive, Image } from 'semantic-ui-react';
 
 import './Modality.css'
 
@@ -7,6 +7,11 @@ export default class Modality extends Component{
 	render(){
 		return(
             <div className="Modality-wrapper">
+             <Responsive  basic minWidth={992}>
+                <div className="About-image">
+                <Image src="https://res.cloudinary.com/dkbuneg9h/image/upload/v1554503786/try4_nk54bf.png" size="medium"/>
+                </div>
+              </Responsive>
                     <div className="Modality">
                     <div className="Modality-title">
                         <Header as='h2'>Modalidades</Header>

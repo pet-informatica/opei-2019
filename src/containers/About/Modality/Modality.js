@@ -9,7 +9,7 @@ export default class Modality extends Component{
             <div className="Modality-wrapper">
                     <div className="Modality">
                     <div className="Modality-title">
-                        <Header as='h2' dividing>Modalidades</Header>
+                        <Header as='h2'>Modalidades</Header>
                     </div>
                     <div className="Modality-cards-wrapper">
                         <Grid centered padded stackable columns={2} >

@@ -8,11 +8,19 @@ export default class List extends Component {
     const {items} = this.props;
 
     const nameList = items.map(item => {
-      return (
-        <li> 
-            <a target="_blank" href={item.route}> {item.name} </a>
-        </li>
-      )
+      if (item.name === "2015" || item.name === "2016" || item.name === "2017" ||item.name === "2018"){
+        return (
+          <li> 
+              <a target="_blank" rel="noopener noreferrer" href={item.route}> {item.name} </a>
+          </li>
+        )
+      }else{
+        return (
+          <li> 
+              <a href={item.route}> {item.name} </a>
+          </li>
+        )
+      }
     })
 
     return (

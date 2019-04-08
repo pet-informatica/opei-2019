@@ -4,6 +4,7 @@ import FAQ from './FAQ/FAQ'
 import Modality from './Modality/Modality'
 import AboutCard from './About/AboutCard';
 import Purpose from './Purpose/Purpose';
+import History from './History/History';
 
 export default class AboutPage extends Component {
 
@@ -25,6 +26,9 @@ export default class AboutPage extends Component {
           </div>
           <div className="index-anchor" id="objetivo">
             <Purpose />
+          </div>
+          <div className="index-anchor" id="historico">
+            <History />
           </div>
           <div className="index-anchor" id="modalidades">
             <Modality />

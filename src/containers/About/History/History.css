@@ -1,7 +1,10 @@
-.ui.grid>.row>[class*="right aligned"].column.column {
+.History-cards-wrapper {
+    margin-left: 25%;
+    margin-right: 25%;  
+}
+
+.ui.grid>.row>[class*="center aligned"].column.column {
     display: flex;
-    flex-direction: row;
-    align-content: flex-end;
-    justify-content: flex-end;
-    align-items: center;
+    justify-content: center;
+    align-items: center;    
 }

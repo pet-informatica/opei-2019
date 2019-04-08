@@ -5,6 +5,7 @@ import Modality from './Modality/Modality'
 import AboutCard from './About/AboutCard';
 import Purpose from './Purpose/Purpose';
 import History from './History/History';
+import './AboutPage.css'
 
 export default class AboutPage extends Component {
 

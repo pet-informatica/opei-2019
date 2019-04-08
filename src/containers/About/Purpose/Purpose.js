@@ -10,7 +10,7 @@ export default class Purpose extends Component {
                     <Grid fluid stackable columns={2}>
                         <GridRow stretched>
                             <GridColumn>
-                                <Responsive  basic minWidth={992}>
+                                <Responsive  basic minWidth={768}>
                                     <div className="Purpose-video">
                                         <Embed id="mHW1Hsqlp6A" source='youtube' placeholder="https://res.cloudinary.com/dkbuneg9h/image/upload/v1511325108/Ruchi-facebook-first-female-enginer_min_r2pssr.jpg"/>
                                     </div>

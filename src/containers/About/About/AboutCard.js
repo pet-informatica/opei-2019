@@ -23,7 +23,7 @@ export default class AboutCard extends Component {
                                 </div>
                         </GridColumn>
                         <GridColumn>
-                            <Responsive>
+                            <Responsive minWidth={768}>
                                 <div className="AboutCard-image">
                                     <Image src="https://res.cloudinary.com/dkbuneg9h/image/upload/v1538365229/opei_dream_time_hxbsn6.jpg" size="large" rounded/>
                                 </div>

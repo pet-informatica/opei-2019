@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {Grid, Icon, Header, Card} from 'semantic-ui-react';
+import {Grid, Icon, Header, Card, Responsive} from 'semantic-ui-react';
 import './History.css';
 
 export default class History extends Component{
@@ -20,37 +20,62 @@ export default class History extends Component{
 				    </Grid>
                     
                     <div className="History-cards-wrapper">
-                        <Grid columns={2} divided>
-						    <Grid.Row>
-							    <Grid.Column textAlign="right">
-								    <Icon name="flag checkered" size="huge" flipped='horizontally'></Icon>
-							    </Grid.Column>
-							    <Grid.Column>
-                                    <Card header='2015' meta='11 escolas' description='75 alunos'/>
-							    </Grid.Column>
-						    </Grid.Row>
-						    <Grid.Row>
-							    <Grid.Column textAlign='right'>
-                                    <Card header='2016' meta='21 escolas' description='224 alunos' textAlign='left'/>
-							    </Grid.Column>
-							    <Grid.Column floated='left'>
-							    </Grid.Column>
-						    </Grid.Row>
-						    <Grid.Row>
-							    <Grid.Column>
-							    </Grid.Column>
-							    <Grid.Column>
-                                    <Card header='2017' meta='22 escolas' description='516 alunos'/>
-							    </Grid.Column>
-						    </Grid.Row>
-                            <Grid.Row>
-							    <Grid.Column textAlign='right'>
-                                    <Card header='2018' meta='35 escolas' description='648 alunos'/>
-							    </Grid.Column>
-							    <Grid.Column floated='left'>
-							    </Grid.Column>
-						    </Grid.Row>
-					    </Grid>
+						<Responsive minWidth='992'>
+							<Grid columns={5} divided='vertically'>
+								<Grid.Row >
+									<Grid.Column textAlign='center' className='history-items' >
+										<Icon name="flag checkered" size="huge" flipped='horizontally'></Icon>
+									</Grid.Column>
+									<Grid.Column/>
+									<Grid.Column textAlign='center'>
+										<Card color='green' header='2016' meta='21 escolas' description='224 alunos'/>
+									</Grid.Column>
+									<Grid.Column/>
+									<Grid.Column textAlign='center'>
+										<Card color='red' header='2018' meta='35 escolas' description='648 alunos'/>
+									</Grid.Column>
+								</Grid.Row>
+								<Grid.Row >
+									<Grid.Column/>
+									<Grid.Column textAlign='center'>
+										<Card color='blue' header='2015' meta='11 escolas' description='75 alunos'/>
+									</Grid.Column>
+									<Grid.Column/>
+									<Grid.Column textAlign='center'>
+										<Card color='yellow' header='2017' meta='22 escolas' description='516 alunos'/>								</Grid.Column>
+									<Grid.Column/>
+								</Grid.Row>
+							</Grid>
+						</Responsive>
+						<Responsive maxWidth='991'>
+						<Grid columns={1} divided='vertically'>
+								<Grid.Row>
+									<Grid.Column textAlign='center'>
+										<Icon name="flag checkered" size="huge" flipped='horizontally'></Icon>
+									</Grid.Column>
+								</Grid.Row>
+								<Grid.Row>
+									<Grid.Column textAlign='center'>
+										<Card color='blue' header='2015' meta='11 escolas' description='75 alunos'/>
+									</Grid.Column>
+								</Grid.Row>
+								<Grid.Row>
+									<Grid.Column textAlign='center'>
+										<Card color='green' header='2016' meta='21 escolas' description='224 alunos'/>
+									</Grid.Column>
+								</Grid.Row>
+								<Grid.Row>
+									<Grid.Column textAlign='center'>
+										<Card color='yellow' header='2017' meta='22 escolas' description='516 alunos'/>								</Grid.Column>
+									<Grid.Column/>
+								</Grid.Row>
+								<Grid.Row>
+									<Grid.Column textAlign='center'>
+										<Card color='red' header='2018' meta='35 escolas' description='648 alunos'/>
+									</Grid.Column>
+								</Grid.Row>
+							</Grid>
+						</Responsive>
                     </div>
                 </div>
             </div>

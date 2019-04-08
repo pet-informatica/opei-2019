@@ -17,6 +17,7 @@
 .Calendar-title{
     width: 97%;
     display: flex;
-    justify-content: flex-end;
-  
+    justify-content: center;
+    
+    margin-top: 50px;
 }

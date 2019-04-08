@@ -3,13 +3,12 @@ import { BrowserRouter, Switch, Route, Redirect } from 'react-router-dom';
 import './App.css';
 import Home from './containers/Home/Home'
 import AboutPage from './containers/About/AboutPage';
-import { Container } from 'semantic-ui-react';
 import Navbar from './components/Navbar/Navbar';
 
 class App extends Component {
   render() {
     return (
-      <Container fluid>
+      <div>
       <BrowserRouter>
         <Navbar>
           <Switch>
@@ -19,7 +18,7 @@ class App extends Component {
           </Switch>
         </Navbar>
       </BrowserRouter>
-      </Container>
+      </div>
     )
   }
 }

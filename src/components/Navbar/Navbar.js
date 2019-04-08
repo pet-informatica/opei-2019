@@ -95,8 +95,9 @@ const NavBarDesktop = (
                     <Grid.Column>
                       <Dropdown name='pratique' active={activeItem === 'pratique'} text='Pratique' pointing='top' className='link item'>
                         <Dropdown.Menu>
-                          <Dropdown.Item> <a target="_blank" href="https://drive.google.com/drive/u/0/folders/16MxxLMiEgpY3VO3QCN54VgKOimkTILlc">Prova Teórica</a></Dropdown.Item>
-                          <Dropdown.Item as={Link} to='/pratique#prova-pratica'>Prova Prática</Dropdown.Item>
+                       
+                          <Dropdown.Item> <a target="_blank" rel="noopener noreferrer" href="https://drive.google.com/drive/u/0/folders/16MxxLMiEgpY3VO3QCN54VgKOimkTILlc">Prova Teórica</a></Dropdown.Item>
+                          <Dropdown.Item><a target="_blank" rel="noopener noreferrer" href=" http://iudex.io">Prova Prática</a></Dropdown.Item>
                         </Dropdown.Menu>
                       </Dropdown>
                     </Grid.Column>

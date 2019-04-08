@@ -9,8 +9,10 @@ export default class Columns extends Component {
     
     return (
       <div className="Columns">
-        <h3> {this.props.title} </h3>
-        <div className="List">
+        <div className="Columns-title">
+          <h3> {this.props.title} </h3>
+        </div>
+        <div className="Columns-list">
           <List items={data}/>
         </div>
       </div>

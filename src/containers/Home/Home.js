@@ -24,9 +24,8 @@ export default class Home extends Component {
         <div className="Home">
           <Landing/>
           <News/>
-          <About isMobile={this.state.mobile}/>
+          <About/>
           <Calendar/>
-          
           <Sponsors/>
           <Footer/>
         </div>

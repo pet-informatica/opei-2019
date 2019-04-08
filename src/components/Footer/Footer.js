@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import {Grid, Icon} from 'semantic-ui-react';
+import {Grid, Icon, Responsive} from 'semantic-ui-react';
 import Columns from './../Columns/Columns';
 import './Footer.css';
 
@@ -7,7 +7,7 @@ export default class Footer extends Component {
   render() {
     const links_opei = [
       {"name": "Home", "route": "/"},
-      {"name": "Sobre", "route": "/About"},
+      {"name": "Sobre", "route": "/sobre"},
       
     ]
 
@@ -19,7 +19,7 @@ export default class Footer extends Component {
     ]
 
     const links_informacoes = [
-      {"name": "Perguntas Frequentes", "route": "/"},
+      {"name": "Perguntas Frequentes", "route": "/sobre#perguntas-frequentes"},
       {"name": "Divulgue", "route": "/"},
       {"name": "Regulamento", "route": "/"}
     ]
@@ -52,11 +52,14 @@ export default class Footer extends Component {
           </Grid.Column>
           <Grid.Column>
             <div className="Footer-contact">
-              
+              <div className="Footer-contact-title">
                 <h3>PET-Informática</h3>
+              </div>
+              <div className="Footer-contact-info">
                 <p>Av. Jorn. Aníbal Fernandes - Cidade Universitária, Recife.</p>
                 <p> opei@cin.ufpe.br </p>
                 <p>(81) 2126-4056</p>
+              </div>
              
             </div>
           </Grid.Column>
@@ -88,6 +91,11 @@ export default class Footer extends Component {
          
             </Grid.Row>
         </Grid>
+        <Responsive  basic maxWidth={992}>
+          <div className="Footer-mobile">
+
+          </div>
+        </Responsive>
     
     </div>
     )

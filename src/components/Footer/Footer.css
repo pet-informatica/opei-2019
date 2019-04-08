@@ -79,15 +79,30 @@
 .Footer-contact{
     color: white;
     font-family: AlwynNewRounded-Light;
+    padding-left: 30px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-content: flex-start;
+    
 
    
 }
 
-.Footer-provas{
+.Footer-contact-title{
+    width: 100%;
+    
    
+    margin-bottom: 25px;
 }
+
 
 .Footer-contact h3 {
     padding-top: 0;
     margin-top: 0;
+}
+
+.Footer-mobile{
+    height: 50px;
 }

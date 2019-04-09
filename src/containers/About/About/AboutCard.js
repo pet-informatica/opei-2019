@@ -16,7 +16,13 @@ export default class Purpose extends Component {
                                         </div>
                                         <div className="AboutCard-self-text" >
                                             <p style={{fontSize: '16px', marginTop: '10px'}}>
-                                            A Olimpíada Pernambucana de Informática (OPEI) é uma competição para os estudantes de Ensinos Fundamental e Médio das instituições públicas e privadas de todo o estado de Pernambuco. Ela possui modalidades de programação práticas, onde os alunos de Ensino Médio podem participar resolvendo questões de raciocínio algorítmico, com problemas similar aos de competições como a <a rel="noopener noreferrer" target="_blank" href="https://icpc.baylor.edu/">ACM/ICPC</a> e a <a rel="noopener noreferrer" target="_blank" href="https://olimpiada.ic.unicamp.br/">Olimpíada Brasileira de Informática (OBI)</a>, assim como modalidades teóricas, onde alunos dos Ensinos Fundamental e Médio sem nenhum conhecimento prévio na área de informática podem resolver desafios de lógica, raciocínio e matemática. A OPEI é uma iniciativa do <a rel="noopener noreferrer" target="_blank" href="https://pet-informatica.github.io/">PET-Informática</a>, e é uma olimpíada completamente organizada por alunos do curso de Ciência da Computação, em conjunto com a Universidade Federal de Pernambuco (UFPE) e empresas parceiras.
+                                            A Olimpíada Pernambucana de Informática (OPEI) é uma competição para os estudantes de ensinos fundamental, 
+        médio e superior das instituições públicas e privadas de todo o estado de Pernambuco.
+        Ela surgiu a partir de uma iniciativa do PET-Informática e através de inspirações de outras competições nordestinas realizadas por grupos PET e vem 
+        crescendo exponencialmente desde a sua primeira edição, em 2015, que teve apenas 75 alunos inscritos. 
+        Na última edição, em 2018, foram registrados 647 alunos inscritos, um aumento superior a 700%. 
+        A Olimpíada é completamente organizada por alunos do curso de Ciência da Computação e possui modalidade teórica e prática, onde alunos sem conhecimento
+        prévio na área de informática podem resolver desafios de lógica, raciocínio e matemática. 
                                             </p>
                                         </div>
                                         <br/>

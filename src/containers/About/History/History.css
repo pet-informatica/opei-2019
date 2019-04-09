@@ -1,10 +1,47 @@
 .History-cards-wrapper {
-    margin-left: 25%;
-    margin-right: 25%;  
-}
+     
+
+    }
 
 .ui.grid>.row>[class*="center aligned"].column.column {
     display: flex;
     justify-content: center;
     align-items: center;    
+}
+
+.History-title{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    margin-bottom: 25px;
+
+    ;
+}
+
+.History-wrapper{
+   
+}
+
+.History-grid{
+    margin-left: 100px;
+    margin-right: 100px;
+    width: 100%;
+
+    
+}
+
+.History-image{
+   
+    
+}
+
+
+.History-grid-image{
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: row;
+
 }

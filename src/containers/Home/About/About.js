@@ -27,11 +27,12 @@ export default class About extends Component {
                        
                   </div>
                         <br/>
-                        <Link to="/sobre">
+                        <a href="/sobre">
                           <p>
                             perguntas frequentes, modalidades e mais
                           </p>
-                          </Link>
+                        </a>
+                          
                   </Segment>
                 </div>  
                 </div>

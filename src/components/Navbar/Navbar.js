@@ -41,7 +41,9 @@ const NavBarMobile = ({
       >
         <Menu.Item as={Link} name="inscricao" content="Inscrição" to="/#inscricao" active={activeItem === 'inscricao'} onClick={onClick}/>
         <Menu.Item as={Link} name="sobre" content="Sobre" to="/sobre" active={activeItem === 'sobre'} onClick={onClick}/>
-        <Menu.Item as={Link} name="regulamento" content="Regulamento" to="/regulamento" active={activeItem === 'regulamento'} onClick={onClick}/>
+        <Menu.Item>
+          <a color='black' target="_blank" rel="noopener noreferrer" href="https://drive.google.com/open?id=1ZLGmv2aa3a5KDeiimu4DeOpFHmAED2Bu">Regulamento</a>
+        </Menu.Item>
         <Menu.Item>
           <a color='black' target="_blank" rel="noopener noreferrer" href="https://drive.google.com/drive/u/0/folders/16MxxLMiEgpY3VO3QCN54VgKOimkTILlc">Prova Teórica</a>
         </Menu.Item>
@@ -92,14 +94,13 @@ const NavBarDesktop = (
                         <Dropdown.Menu>
                           <Dropdown.Item as={Link} to="/sobre">Sobre</Dropdown.Item>
                           <Dropdown.Item as={Link} to="/material-divulgacao">Material de divulgação</Dropdown.Item>
-                          <Dropdown.Item as={Link} to="/regulamento">Regulamento</Dropdown.Item>
+                          <Dropdown.Item> <a target="_blank" rel="noopener noreferrer" href="https://drive.google.com/open?id=1ZLGmv2aa3a5KDeiimu4DeOpFHmAED2Bu">Regulamento</a></Dropdown.Item>
                         </Dropdown.Menu>
                       </Dropdown>
                     </Grid.Column>
                     <Grid.Column>
                       <Dropdown name='pratique' active={activeItem === 'pratique'} text='Pratique' pointing='top' className='link item'>
                         <Dropdown.Menu>
-                       
                           <Dropdown.Item> <a target="_blank" rel="noopener noreferrer" href="https://drive.google.com/drive/u/0/folders/16MxxLMiEgpY3VO3QCN54VgKOimkTILlc">Prova Teórica</a></Dropdown.Item>
                           <Dropdown.Item><a target="_blank" rel="noopener noreferrer" href="https://iudex.io/group/join/CKE8JMA">Prova Prática</a></Dropdown.Item>
                         </Dropdown.Menu>

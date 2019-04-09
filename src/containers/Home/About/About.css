@@ -1,13 +1,10 @@
-.About {
-    font-family: 'AlwynNewRounded-Light';
-}
-
 .About{
     display: flex;
     justify-content: space-between;
-
+    
     width: 100%;
     height: 500px;
+    font-family: 'AlwynNewRounded-Light';
 }
 
 .About-content-wrapper{

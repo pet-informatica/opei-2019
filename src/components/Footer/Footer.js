@@ -83,9 +83,17 @@ export default class Footer extends Component {
 
               <Grid.Column width={5}> 
                 <div className="Footer-pet-social">
-                  <Icon name="instagram" size="large" inverted></Icon>
-                  <Icon name="facebook" size="large" inverted></Icon>
+                
+                  <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/opei2019">
+                    <Icon name="instagram" size="large" inverted></Icon>
+                  </a>
+
+                  <a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/opei2019/">
+                    <Icon name="facebook" size="large" inverted></Icon>
+                  </a>
+                {/*
                   <Icon name="twitter" size="large" inverted></Icon>
+                */}
                 </div> 
               </Grid.Column>
          

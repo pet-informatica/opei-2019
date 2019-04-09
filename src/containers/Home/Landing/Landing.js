@@ -15,7 +15,7 @@ export default class Landing extends Component {
                     <div className="Landing-self-text">
                       <p>
                           <div className="Landing-title">Gosta de desafios?</div>
-                          Então a OPEI é para você! Venha desenvolver o seu talento na Olimpiáda Pernambucana de Informática.
+                          Então a OPEI é para você! Venha desenvolver o seu talento na Olimpíada Pernambucana de Informática.
                       </p>
                     </div>
                     </Segment>

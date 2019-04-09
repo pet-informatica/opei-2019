@@ -42,8 +42,12 @@ const NavBarMobile = ({
         <Menu.Item as={Link} name="inscricao" content="Inscrição" to="/#inscricao" active={activeItem === 'inscricao'} onClick={onClick}/>
         <Menu.Item as={Link} name="sobre" content="Sobre" to="/sobre" active={activeItem === 'sobre'} onClick={onClick}/>
         <Menu.Item as={Link} name="regulamento" content="Regulamento" to="/regulamento" active={activeItem === 'regulamento'} onClick={onClick}/>
-        <Menu.Item as={Link} name="pratique-teorica" content="Provas Teóricas" to="/pratique#prova-teorica" active={activeItem === 'pratique-teorica'} onClick={onClick}/>
-        <Menu.Item as={Link} name="pratique-pratica" content="Provas Práticas" to="/pratique#prova-pratica" active={activeItem === 'pratique-pratica'} onClick={onClick}/>
+        <Menu.Item>
+          <a color='black' target="_blank" rel="noopener noreferrer" href="https://drive.google.com/drive/u/0/folders/16MxxLMiEgpY3VO3QCN54VgKOimkTILlc">Prova Teórica</a>
+        </Menu.Item>
+        <Menu.Item>
+          <a target="_blank" rel="noopener noreferrer" href="https://iudex.io/group/join/CKE8JMA">Prova Prática</a>
+        </Menu.Item>
         <Menu.Item as={Link} name="faq" content="Perguntas Frequentes" to="/sobre#perguntas-frequentes" active={activeItem === 'faq'} onClick={onClick}/>
       </Sidebar>
     <Sidebar.Pushable as={Segment} style={{marginTop: "-1px"}}>
@@ -97,7 +101,7 @@ const NavBarDesktop = (
                         <Dropdown.Menu>
                        
                           <Dropdown.Item> <a target="_blank" rel="noopener noreferrer" href="https://drive.google.com/drive/u/0/folders/16MxxLMiEgpY3VO3QCN54VgKOimkTILlc">Prova Teórica</a></Dropdown.Item>
-                          <Dropdown.Item><a target="_blank" rel="noopener noreferrer" href=" http://iudex.io">Prova Prática</a></Dropdown.Item>
+                          <Dropdown.Item><a target="_blank" rel="noopener noreferrer" href="https://iudex.io/group/join/CKE8JMA">Prova Prática</a></Dropdown.Item>
                         </Dropdown.Menu>
                       </Dropdown>
                     </Grid.Column>

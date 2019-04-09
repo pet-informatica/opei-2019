@@ -21,7 +21,7 @@ export default class Footer extends Component {
     const links_informacoes = [
       {"name": "Perguntas Frequentes", "route": "/sobre#perguntas-frequentes"},
       {"name": "Divulgue", "route": "/"},
-      {"name": "Regulamento", "route": "/"}
+      {"name": "Regulamento", "route": "https://drive.google.com/open?id=1ZLGmv2aa3a5KDeiimu4DeOpFHmAED2Bu"}
     ]
 
     return (

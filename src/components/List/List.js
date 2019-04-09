@@ -8,7 +8,7 @@ export default class List extends Component {
     const {items} = this.props;
 
     const nameList = items.map(item => {
-      if (item.name === "2015" || item.name === "2016" || item.name === "2017" ||item.name === "2018"){
+      if (item.name === "2015" || item.name === "2016" || item.name === "2017" ||item.name === "2018" || item.name === "Regulamento"){
         return (
           <li> 
               <a target="_blank" rel="noopener noreferrer" href={item.route}> {item.name} </a>

@@ -1,29 +1,48 @@
 .AboutCard-wrapper{
-    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-items: center;
+
+    
     margin-top: 10px;
     margin-bottom: 10px;
     margin-left: 10%;
     margin-right: 10%;
+
+   
 }
 
-.AboutCard-text{
-    
-}
-
-.About-self-text{
-    display: flex;
+.AboutCard-self-text{
+    width: 100%;
     text-align: justify;
-    
+    margin-right: 100px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .AboutCard-image{
     display: flex;
     flex-direction: row;
     align-items: flex-end;
-    justify-content: flex-end;
-    
+    justify-content: center;
+
+    width: 100%;
+
+    padding-right: 10px;
 }
 
-.A{
-    border: thin solid black;
+.AboutCard-items{
+    width: 80%;
+  
+}
+
+.AboutCard-content-wrapper{
+    width: 100%;
+}
+
+.AboutCard-text{
+    width: 100%;
+   
 }

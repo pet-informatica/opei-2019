@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { Grid, Icon, Responsive } from 'semantic-ui-react'
 import Columns from './../Columns/Columns'
-import './Footer.css';
+import './Footer.css'
 
 export default class Footer extends Component {
   render () {

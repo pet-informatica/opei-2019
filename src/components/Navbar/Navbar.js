@@ -93,7 +93,7 @@ const NavBarDesktop = (
                       <Dropdown name='informacoes' active={activeItem === 'informacoes'} text='Informações' pointing="top" className='link item'>
                         <Dropdown.Menu>
                           <Dropdown.Item as={Link} to="/sobre">Sobre</Dropdown.Item>
-                          <Dropdown.Item as={Link} to="/material-divulgacao">Material de divulgação</Dropdown.Item>
+                          {/* <Dropdown.Item as={Link} to="/material-divulgacao">Material de divulgação</Dropdown.Item> */}
                           <Dropdown.Item> <a target="_blank" rel="noopener noreferrer" href="https://drive.google.com/open?id=1ZLGmv2aa3a5KDeiimu4DeOpFHmAED2Bu">Regulamento</a></Dropdown.Item>
                         </Dropdown.Menu>
                       </Dropdown>

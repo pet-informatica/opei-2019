@@ -34,7 +34,7 @@ export default class FAQ extends Component{
 						<Grid.Column width={14}>
 							<div className="FAQ-Title">
 								<Header as='h2'>Perguntas Frequentes
-									<Header.Subheader>Tem alguma dúvida? Veja se encontra a resposta aqui! Caso contrário, entre em <Link to="/#contato">contato</Link> conosco! </Header.Subheader>
+									<Header.Subheader>Tem alguma dúvida? Veja se encontra a resposta aqui! Caso contrário, entre em <Link to="/sobre#contato">contato</Link> conosco! </Header.Subheader>
 								</Header>
 							</div>
 						</Grid.Column>

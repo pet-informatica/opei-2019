@@ -20,7 +20,7 @@ export default class Footer extends Component {
 
     const links_informacoes = [
       {"name": "Perguntas Frequentes", "route": "/sobre#perguntas-frequentes"},
-      {"name": "Divulgue", "route": "/"},
+      // {"name": "Divulgue", "route": "/"},
       {"name": "Regulamento", "route": "https://drive.google.com/open?id=1ZLGmv2aa3a5KDeiimu4DeOpFHmAED2Bu"}
     ]
 
@@ -55,7 +55,7 @@ export default class Footer extends Component {
               <div className="Footer-contact-title">
                 <h3>PET-Informática</h3>
               </div>
-              <div className="Footer-contact-info">
+              <div className="index-anchor" id="contato" style={{marginTop: 0}}>
                 <p>Av. Jorn. Aníbal Fernandes - Cidade Universitária, Recife.</p>
                 <p> opei@cin.ufpe.br </p>
                 <p>(81) 2126-4056</p>

@@ -12,7 +12,7 @@ export default class AccordionCustom extends Component {
     this.setState({ activeIndex: newIndex })
   }
 
-  render() {
+  render () {
     const { activeIndex } = this.state
 
     return (
@@ -28,6 +28,6 @@ export default class AccordionCustom extends Component {
           </div>
         ))}
       </Accordion>
-    );
+    )
   }
 }

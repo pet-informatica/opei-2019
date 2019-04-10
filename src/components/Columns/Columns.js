@@ -1,12 +1,12 @@
-import React, { Component } from 'react';
-import List from '../List/List.js';
+import React, { Component } from 'react'
+import List from '../List/List.js'
 
 import './Columns.css'
 
 export default class Columns extends Component {
-  render() {
-    const {data} = this.props;
-    
+  render () {
+    const { data } = this.props
+
     return (
       <div className="Columns">
         <div className="Columns-title">
